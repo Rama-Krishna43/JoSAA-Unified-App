@@ -1,46 +1,33 @@
-# 🎓 JoSAA College Predictor (2026 Edition)
+# 🎓 JoSAA Unified Suite (2026 Edition)
 
-A machine learning-based tool designed to help JEE Aspirants predict their potential college and branch based on historical JoSAA opening and closing ranks from **2023 to 2025**.
+A powerful, unified tool designed to help JEE Aspirants navigate the JoSAA counseling process by providing both **College Predictions** and **Eligibility Tracking** based on historical data from **2023 to 2025**.
 
-**Live Demo:** [JoSAA College Predictor](https://josaa-college-predictor-ja2sy3qfq6dhjyhtsujwj3.streamlit.app/)
-
+**GitHub Repository:** [JoSAA-Unified-App](https://github.com/Rama-Krishna43/JoSAA-Unified-App)
 
 ## 🚀 Features
-- **Accurate Predictions**: Uses a Random Forest Regressor to predict closing ranks with high accuracy.
-- **Interactive Dashboard**: Explore trends across NITs, IIITs, and GFTIs using Altair-powered visualizations.
-- **Personalized Filters**: Filter by Institute, Program, Quota, Seat Type, and Gender.
-- **2026 Ready**: Designed for the upcoming JoSAA 2026 counseling season.
-
-## 📊 Model Performance
-The model was trained on ~35,000 entries of JoSAA data.
-- **R-squared (R²):** 0.865
-- **Mean Absolute Error (MAE):** ~2,333 ranks
+- **🔮 College Predictor**: Uses a Machine Learning model (Random Forest) to predict your admission chances for specific IITs, NITs, IIITs, and GFTIs.
+- **🎯 Eligibility Finder**: Instantly filter and discover all academic programs you are eligible for across India based on your rank, exam, and category.
+- **✨ Premium UI**: Features a sleek, modern interface with interactive elements, pop-out full-screen data tables, and quick CSV downloads.
 
 ## 🛠️ Tech Stack
 - **Languages**: Python
-- **Libraries**: Scikit-learn, Pandas, NumPy, Altair
-- **Deployment**: Streamlit
+- **Libraries**: Streamlit, Pandas, Scikit-learn
+- **Data**: JoSAA Opening & Closing Ranks (2023, 2024, 2025)
 
 ## 💻 How to Run Locally
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Rama-Krishna43/JoSAA-College-Predictor.git
-   cd JoSAA-College-Predictor
+   git clone https://github.com/Rama-Krishna43/JoSAA-Unified-App.git
+   cd JoSAA-Unified-App
    ```
 
 2. **Install dependencies**:
    ```bash
-   pip install streamlit pandas scikit-learn altair
+   pip install -r requirements.txt
    ```
 
 3. **Run the app**:
    ```bash
    streamlit run Deployment.py
    ```
-
-## 📸 Visualizations
-The project includes a comprehensive data dashboard showing:
-- Top 20 Institutes by program entries.
-- Seat Type and Gender distributions.
-- Quota-wise entry breakdowns.

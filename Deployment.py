@@ -4,17 +4,21 @@ import joblib
 import pickle
 import altair as alt
 import warnings
+warnings.filterwarnings('ignore')
+
+from streamlit.components.v1 import html
 
 verification_code="yRH8JcxZlFPIRId2blA6DD9Z4z42LdTgznTQLI3PIWI"
 
-st.markdown(
-    f"""
-    <meta name="google-site-verification" content="{verification_code}">
+st.components.v1.html(
+    """
+    <head>
+    <meta name="google-site-verification" content="YOUR_CODE" />
+    </head>
     """,
-    unsafe_allow_html=True
+    height=0,
 )
 
-warnings.filterwarnings('ignore')
 
 # --- 1. SET PAGE CONFIG (Must be the first st command) ---
 st.set_page_config(

@@ -4,32 +4,19 @@ import joblib
 import pickle
 import altair as alt
 import warnings
+
 warnings.filterwarnings('ignore')
-
-from streamlit.components.v1 import html
-
-verification_code="yRH8JcxZlFPIRId2blA6DD9Z4z42LdTgznTQLI3PIWI"
-
-st.components.v1.html(
-    """
-    <head>
-    <meta name="google-site-verification" content="YOUR_CODE" />
-    </head>
-    """,
-    height=0,
-)
-
 
 # --- 1. SET PAGE CONFIG (Must be the first st command) ---
 st.set_page_config(
-    page_title="JoSAA 2026 Premium Predictor",
+    page_title="JoSAA College Predictor & Eligibility 2026 | IIT, NIT, IIIT",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/Rama-Krishna43/JoSAA-College-Predictor',
-        'Report a bug': "https://github.com/Rama-Krishna43/JoSAA-College-Predictor/issues",
-        'About': "# JoSAA 2026 Advanced College Predictor & Eligibility Suite"
+        'Get Help': 'https://github.com/Rama-Krishna43/JoSAA-Unified-App',
+        'Report a bug': "https://github.com/Rama-Krishna43/JoSAA-Unified-App/issues",
+        'About': "# JoSAA 2026 Advanced College Predictor & Eligibility Suite\nBuilt to help JEE aspirants find their dream college."
     }
 )
 

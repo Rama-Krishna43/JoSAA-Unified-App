@@ -5,6 +5,15 @@ import pickle
 import altair as alt
 import warnings
 
+verification_code="yRH8JcxZlFPIRId2blA6DD9Z4z42LdTgznTQLI3PIWI"
+
+st.markdown(
+    f"""
+    <meta name="google-site-verification" content="{verification_code}">
+    """,
+    unsafe_allow_html=True
+)
+
 warnings.filterwarnings('ignore')
 
 # --- 1. SET PAGE CONFIG (Must be the first st command) ---

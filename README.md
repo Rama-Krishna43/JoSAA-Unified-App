@@ -2,6 +2,7 @@
 
 A powerful, unified tool designed to help JEE Aspirants navigate the JoSAA counseling process by providing both **College Predictions** and **Eligibility Tracking** based on historical data from **2023 to 2025**.
 
+**Live Web App:** [JoSAA Unified Suite](https://rama-krishna43-josaa-unified-app-deployment-4aevok.streamlit.app/)
 **GitHub Repository:** [JoSAA-Unified-App](https://github.com/Rama-Krishna43/JoSAA-Unified-App)
 
 ## 🚀 Features
